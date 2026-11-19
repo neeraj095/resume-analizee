@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Practice | CareerPrep AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h2 class="logo">CareerPrep <span>AI</span></h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume Analyzer</a>
+            <a href="interview.html">Interview Practice</a>
+        </nav>
+
+    </header>
+
+    <section class="interview-section">
+
+        <div class="interview-heading">
+
+            <p class="tagline">PREPARE FOR YOUR FUTURE</p>
+
+            <h1>Interview <span>Practice</span></h1>
+
+            <p>
+                Practice interview questions and improve your confidence.
+            </p>
+
+        </div>
+
+        <div class="interview-container">
+
+            <div class="form-group">
+
+                <label>Select Job Role</label>
+
+                <select id="interviewRole">
+
+                    <option value="">Select Job Role</option>
+
+                    <option value="Frontend Developer">
+                        Frontend Developer
+                    </option>
+
+                    <option value="Backend Developer">
+                        Backend Developer
+                    </option>
+
+                    <option value="Full Stack Developer">
+                        Full Stack Developer
+                    </option>
+
+                    <option value="Python Developer">
+                        Python Developer
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Interview Category</label>
+
+                <select id="interviewCategory">
+
+                    <option value="Technical">Technical Interview</option>
+
+                    <option value="HR">HR Interview</option>
+
+                </select>
+
+            </div>
+
+            <button id="startInterview" class="analyze-btn">
+                Start Interview →
+            </button>
+
+            <div id="questionArea" class="question-area">
+
+                <h2>Interview Question</h2>
+
+                <p id="questionText">
+                    Your question will appear here.
+                </p>
+
+                <div class="form-group">
+
+                    <label>Your Answer</label>
+
+                    <textarea
+                        id="userAnswer"
+                        rows="6"
+                        placeholder="Write your answer here..."
+                    ></textarea>
+
+                </div>
+
+                <button id="submitAnswer" class="analyze-btn">
+                    Submit Answer
+                </button>
+
+                <div id="answerFeedback" class="answer-feedback">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>  CareerPrep AI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

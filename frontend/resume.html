@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Analyzer | CareerPrep AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h2 class="logo">CareerPrep <span>AI</span></h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html" class="active">Resume Analyzer</a>
+            <a href="interview.html">Interview Practice</a>
+        </nav>
+
+    </header>
+
+    <section class="resume-section">
+
+        <div class="resume-heading">
+
+            <p class="tagline">✦ SMART RESUME ANALYSIS</p>
+
+            <h1>Analyze Your <span>Resume</span></h1>
+
+            <p class="page">
+                Upload your resume and discover how well it
+                matches your target job.
+            </p>
+
+        </div>
+
+        <div class="resume-container">
+
+            <form id="resumeForm">
+
+                <div class="form-group">
+
+                    <label>Upload Your Resume (PDF)</label>
+
+                    <div class="upload-box">
+
+                        <div class="upload-icon">↑</div>
+
+                        <p>Choose your resume PDF</p>
+
+                        <span>PDF format · Maximum 5 MB</span>
+
+                        <input
+                            type="file"
+                            id="resumeFile"
+                            accept=".pdf,application/pdf"
+                            required
+                            class="input"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Select Job Role</label>
+
+                    <select id="jobRole" required>
+
+                        <option value="">Select Job Role</option>
+
+                        <option value="Frontend Developer">
+                            Frontend Developer
+                        </option>
+
+                        <option value="Backend Developer">
+                            Backend Developer
+                        </option>
+
+                        <option value="Full Stack Developer">
+                            Full Stack Developer
+                        </option>
+
+                        <option value="Python Developer">
+                            Python Developer
+                        </option>
+
+                        <option value="Data Analyst">
+                            Data Analyst
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group2">
+
+                    <label class="label">Job Description</label>
+
+                    <textarea
+                        id="jobDescription"
+                        placeholder="Paste job description here..."
+                        rows="6"
+                    ></textarea>
+
+                </div>
+
+                <button type="submit" class="analyze-btn">
+                    Analyze My Resume →
+                </button>
+
+            </form>
+
+            <div id="resumeResult" class="resume-result">
+
+                <div class="result-icon">✦</div>
+
+                <h2>Analysis Results</h2>
+
+                <p id="resultMessage">
+                    Your resume analysis will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CareerPrep AI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

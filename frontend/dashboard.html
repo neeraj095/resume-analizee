@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPrep AI - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>CareerPrep AI</h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume Analyzer</a>
+            <a href="interview.html">Interview Practice</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+    </nav>
+
+    <section class="dashboard-section">
+
+        <h1>My Dashboard</h1>
+        <p>Track your resume analysis history.</p>
+
+        <div class="dashboard-stats">
+            <div class="dashboard-card">
+                <h3>Total Resumes</h3>
+                <h2 id="totalResumes">0</h2>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Average ATS Score</h3>
+                <h2 id="averageScore">0%</h2>
+            </div>
+        </div>
+
+        <h2 class="history-heading">Resume History</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Job Role</th>
+                        <th>ATS Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody id="resumeTableBody">
+                    <tr>
+                        <td colspan="4">Loading resumes...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

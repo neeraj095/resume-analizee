@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPrep AI | Career Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">CareerPrep <span>AI</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="login-btn">Get Started</button>
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">YOUR CAREER STARTS HERE</p>
+
+            <h1>
+                Build Your Resume.
+                <span>Prepare For Success.</span>
+            </h1>
+
+            <p class="description">
+                Analyze your resume, improve your skills and
+                practice interviews with CareerPrep AI.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="openResume()">Analyze Resume</button>
+                <button onclick="openInterview()" class="secondary-btn">
+                    Practice Interview
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="features" id="features">
+
+        <h2>Everything You Need</h2>
+
+        <p class="section-description">
+            Tools to help you prepare for your next opportunity.
+        </p>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>Resume Analyzer</h3>
+
+                <p>
+                    Upload your resume and check your ATS score,
+                    missing skills and improvement suggestions.
+                </p>
+
+                <button onclick="openResume()">
+                    Analyze Now →
+                </button>
+            </div>
+
+            <div class="feature-card">
+                <h3>Interview Practice</h3>
+
+                <p>
+                    Practice technical and HR interview questions
+                    and improve your answering skills.
+                </p>
+
+                <button onclick="openInterview()">
+                    Start Practice →
+                </button>
+            </div>
+
+            <div class="feature-card">
+                <h3>Career Dashboard</h3>
+
+                <p>
+                    Track your resume scores, interview results
+                    and career improvement.
+                </p>
+
+                <button onclick="openDashboard()">
+                    View Dashboard →
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CareerPrep AI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
